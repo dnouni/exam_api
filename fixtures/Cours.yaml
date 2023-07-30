@@ -1,0 +1,5 @@
+App\Entity\Cours:
+  cours_{0..120}:
+    nft: "@nft*"
+    dateCours: '<dateTimeBetween("2004-01-01", "now")>'
+    montantEth: <randomFloat(0, 4)>

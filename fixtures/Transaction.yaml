@@ -1,0 +1,7 @@
+App\Entity\Transaction:
+  transaction{0..150}:
+    nft: "@nft*"
+    dateTransaction: <dateTimeBetween("-12 months", "now")>
+    montantEth: <randomFloat(0, 4)>
+    utilisateur: "@user*"
+

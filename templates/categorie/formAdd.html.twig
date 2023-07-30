@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Form Add Cate {% endblock %}
+
+{% block body %}
+
+    {{ form_start(form) }}
+
+        <div class="machin">
+            {{ form_label(form.libelle)}}
+        </div>
+        <div class="truc">
+            {{ form_widget(form.libelle)}}
+        </div>
+
+    <button type="submit">Valider</button>
+    {{ form_end(form) }}
+
+
+{% endblock %}

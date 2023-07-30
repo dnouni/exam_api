@@ -1,0 +1,3 @@
+App\Entity\Categorie:
+  categorie_{0..5}:
+    libelle: "<word()>"

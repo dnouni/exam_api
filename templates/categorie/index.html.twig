@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %} Catégorie de NFT{% endblock %}
+
+{% block body %}
+    <a href="{{path('app_categories_add')}}">Ajouter</a>
+
+    {% for categori in categories %}
+
+        {{ categori.libelle }}
+
+        <a href="{{path('app_categories_update', {'id':categori.id})}}">Modifier</a>
+
+        <a href="{{path('app_categories_remove', {'id':categori.id})}}">Supprimer</a>
+
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,9 @@
+App\Entity\Nft:
+  nft_{0..100}:
+    sousCategorie: "@sousCategorie*"
+    image: "www.todo.fr"
+    nom: "<firstName()>"
+    quantiteDispo: "<numberBetween(0,50)>"
+    dateDepot: '<dateTimeBetween("2004-01-01", "now")>'
+    prixInit: "<randomFloat(0, 4)>"
+    utilisateur: "@user*"

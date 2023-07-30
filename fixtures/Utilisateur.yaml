@@ -1,0 +1,10 @@
+App\Entity\Utilisateur:
+  user_{0..549}:
+    adressePostale: "@adressePostale*"
+    email: <email()>
+    roles: "[ROLE_USER]"
+    password: <password()>
+    estHomme: <boolean(50)>
+    nom: <lastName()>
+    prenom: <firstName()>
+    dateNaissance: '<dateTimeBetween("1940-01-01", "-18 Years")>'

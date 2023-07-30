@@ -1,0 +1,6 @@
+APP\Entity\AdressePostale:
+  adressePostale{0..450}:
+    adresse: "<numberBetween(0,100)><text()>"
+    codePostal: "<numberBetween(10000,90000)>"
+    commune: "<word(12)>"
+    pays: "<word(12)>"
